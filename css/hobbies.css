@@ -1,0 +1,50 @@
+@import url(./style.css);
+@import url(./horario.css);
+
+* {
+  /* border: 1px solid rgba(0, 0, 0, 0.121); */
+}
+
+.container article {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.texto {
+  margin: 5em 0;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  margin: o auto;
+  max-width: 780px;
+  padding: 0 30px;
+}
+.texto a {
+  width: 25%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.texto a:hover {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+img {
+  width: 100%;
+}
+
+/*HORARIO*/
+
+.horario {
+  border: 2px solid rgba(0, 0, 0, 0.435);
+  margin: 3em 0;
+}
+
+/*VIDEO*/
+
+.video-responsive {
+  width: 100%;
+  height: 390px;
+}

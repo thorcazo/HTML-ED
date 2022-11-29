@@ -1,0 +1,69 @@
+@import url("./css/style.css");
+
+* {
+  /* border: 1px solid rgba(0, 0, 0, 0.058); */
+}
+.container-presentacion {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.presentacion {
+  width: 80%;
+  display: grid;
+  justify-content: start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-areas:
+    "social txt txt"
+    "social  txt txt";
+}
+
+/*GRID*/
+
+.yo {
+  grid-area: yo;
+}
+
+.presentacion-txt {
+  grid-area: txt;
+}
+.social {
+  grid-area: social;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fa-linkedin,
+.fa-instagram {
+  font-size: 30px;
+  color: rgb(23, 23, 23);
+}
+
+.social a {
+  padding: 5px;
+  border-bottom: 3px solid rgba(23, 23, 23, 0);
+}
+
+.social a:hover {
+  border-bottom: 3px solid rgb(23, 23, 23);
+  transition: 0.2s ease-in-out;
+}
+
+.presentacion .yo {
+  width: 200px;
+  border-radius: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(23, 23, 23);
+}

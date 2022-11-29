@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>E.D. - Formulario</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1700/1700505.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="nombreApellidos.html">Nombre y apellidos</a>
+        </li>
+        <li>
+          <a href="hobbies.html">Hobbies</a>
+        </li>
+        <li>
+          <a class="active" href="formulario.html">Formulario</a>
+        </li>
+        <li>
+          <a href="Grupo.html">Grupo</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Formulario</h1>
+
+    <!-- crear formulario -->
+
+    <div class="formulario">
+
+      <form action="formulario.html" method="post">
+
+        <label for="name">Nombre</label>
+        <input type="text" name="nombre" placeholder="Introduce tu nombre">
+
+        <label for="name">Apellidos</label>
+        <input type="text" name="apellidos" placeholder="Introduce tus apellidos">
+
+        <label for="name">Email</label>
+        <input type="text" name="nombre" placeholder="Introduce Email">
+
+        <label for="name">Teléfono</label>
+        <input type="text" name="Telefono" placeholder="Introduce tu teléfono">
+
+        <!-- date -->
+        <label for="name">Fecha de nacimiento</label>
+        <input type="date" name="fecha" placeholder="Introduce tu fecha de nacimiento">
+        <label for="name">Nacionalidad</label>
+        <section>
+          <select name="nacionalidad">
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Italia">Italia</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </section>
+
+
+        <!-- radio -->
+        <label class="sexo" for="name">Sexo</label>
+        <div>
+          <input type="radio" name="sexo" value="hombre"> Hombre
+          <input type="radio" name="sexo" value="mujer"> Mujer
+        </div>
+
+
+
+
+
+        <!-- checkbox -->
+
+        <label for="name">Hobbies</label>
+        <div> <input type="checkbox" name="hobbies" value="deporte"> Deporte
+          <input type="checkbox" name="hobbies" value="musica"> Música
+          <input type="checkbox" name="hobbies" value="videojuegos"> Videojuegos
+        </div>
+
+
+
+        <label for="name">Mensaje</label>
+
+        <textarea name="textarea" id="" cols="60%" rows="3" placeholder="Escribe lo que quieras"></textarea>
+        <div class="inputs">
+          <input class="btn-input-black" type="submit" value="Enviar">
+          <input class="btn-input-white" type="reset" value="Limpiar">
+          <input class="btn-input-white" type="button" value="Cerrar" onclick="window.close()">
+          <input class="btn-input-white" type="button" value="Volver" onclick="window.location.href='index.html'">
+        </div>
+
+
+      </form>
+
+    </div>
+
+
+
+  </body>
+
+</html>
