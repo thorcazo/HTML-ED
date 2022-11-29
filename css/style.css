@@ -123,3 +123,25 @@ p,
 li {
   line-height: 33px;
 }
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-bottom: none;
+}
+
+.btn a:hover {
+  color: rgb(255, 255, 255);
+}
