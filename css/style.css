@@ -10,7 +10,7 @@
 
 :root {
   /*colores*/
-  --blanco-fondo: #f2f5f8;
+  --blanco-fondo: #f9f9f9;
   --negro: #1a1a1a;
 }
 
@@ -134,4 +134,22 @@ li {
   text-decoration: none;
   margin-top: 20px;
   display: inline-block;
+}
+
+.btn-present {
+padding: 10px 20px;
+border-radius: 100px;
+background-color: var(--blanco-fondo);
+border: 2px solid var(--negro);
+
+}
+
+.btn-present:hover {
+  color: var(--blanco-fondo);
+background-color: var(--negro);
+}
+
+.btn-present:hover {
+  transition: ease-in-out 0.2s;
+  border-bottom: none;
 }
